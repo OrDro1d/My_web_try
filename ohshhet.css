@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+body {
+	font-family: "Rubik", sans-serif;
+	font-size: 16px;
+	background-color: #222;
+	min-width: 700px;
+}
+
+h1 {
+	color: #fff;
+}
+
+h2 {
+	color: #222;
+}
+
+.container {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.link {
+	font-size: 16px;
+	transition: all 0.3s;
+	text-decoration: none;
+}
+
+.link:hover {
+	color: red;
+	font-size: 1.2rem;
+}
+
+.link:active {
+	color: yellow;
+}
+
+.text-about-me {
+	font-style: oblique;
+	color: #ddd;
+}
+
+.form {
+	line-height: 30px;
+}
+
+.card {
+	background-color: aliceblue;
+	border-radius: 13px;
+	padding: 20px 20px 20px 20px;
+	margin: 20px;
+	border-width: 1px;
+	/* box-shadow: 10px 10px 10px #000; */
+}
+
+.c0 {
+	background-color: #444;
+}
+
+.c1 {
+	background-color: lightsteelblue;
+}
+
+.c1 h2 {
+	background-color: rgb(131, 173, 207);
+	border-radius: 10px;
+	padding: 10px;
+	margin-right: 20%;
+}
+
+.c2 {
+	background-color: khaki;
+}
+
+.c2 h2 {
+	background-color: rgb(220, 212, 94);
+	border-radius: 10px;
+	padding: 10px;
+	margin-right: 20%;
+}
+
+.c3 {
+	background-color: lightgreen;
+}
+
+.c3 h2 {
+	background-color: rgb(52, 204, 52);
+	border-radius: 10px;
+	padding: 10px;
+	margin-right: 20%;
+}
+.c4 {
+	background-color: bisque;
+}
+
+.c4 h2 {
+	background-color: rgb(232, 174, 154);
+	border-radius: 10px;
+	padding: 10px;
+	margin-right: 20%;
+}
+
+.image-center {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.image {
+	border-radius: 10px;
+	/* box-shadow: 10px 10px 10px #000; */
+	width: 50%;
+}
+
+.button {
+	font-size: 20px;
+	border-radius: 0.5rem;
+	padding: 15px 15px 15px 15px;
+	transition: all 0.3s;
+	background-color: rgb(232, 174, 154);
+	border-style: groove;
+	cursor: pointer;
+}
+
+.button:hover {
+	background-color: rgb(900, 174, 154);
+	opacity: 0.5;
+}
+
+.button:active {
+	background-color: rgb(232, 900, 154);
+}
+
+.area {
+	border-radius: 1em;
+}
