@@ -12,10 +12,10 @@
 		<link rel="stylesheet" href="ohshhet.css" />
 	</head>
 	<body>
-		<header>
-			<ul class="contact-me">
-				<li><img src="myself.jpg" class="image" /></li>
-				<li class="text-about-me">
+		<div class="container">
+			<header>
+				<div><img src="myself.jpg" class="image" /></div>
+				<div class="text-about-me">
 					<h1>Осман Люманов</h1>
 					<p>
 						Меня зовут Осман. Мне 18 лет. На данный момент учусь на втором курсе
@@ -26,97 +26,88 @@
 						В свободное люблю играть в видеоигры, смотреть фильмы и сериалы.
 						Иногда даже рисую.
 					</p>
-				</li>
-			</ul>
-		</header>
-		<div class="w-w-">
-			<div class="sotki">
-				<h2>Список социальных сетей:</h2>
-				<ul class="links">
-					<li>
-						<a href="oops_try_again_page.html" target="_blank"> ВКонтакте </a>
-					</li>
-					<li>
-						<a href="oops_try_again_page.html" target="_blank"> YouTube </a>
-					</li>
-					<li>
-						<a href="oops_try_again_page.html" target="_blank"> Discord </a>
-					</li>
-					<li>
-						<a href="oops_try_again_page.html" target="_blank"> Telegram </a>
-					</li>
-				</ul>
-			</div>
-
-			<div class="card c2">
-				<h2>Мои хобби:</h2>
-				<ul class="table">
-					<li>Фильмы и сериалы</li>
-					<li>Видеоигры</li>
-					<li>Рисование</li>
-					<li>Самообразование</li>
-				</ul>
-			</div>
-			<div class="card c3">
-				<h2>Мой опыт работы:</h2>
-				<table class="table" width="555">
-					<tbody>
-						<tr>
-							<td>Детский сад</td>
-							<td>Детсадовец</td>
-							<td>2008 - 2011</td>
-						</tr>
-
-						<tr>
-							<td>Школа</td>
-							<td>Школьник</td>
-							<td>2011 - 2022</td>
-						</tr>
-
-						<tr>
-							<td>ВУЗ</td>
-							<td>Студент</td>
-							<td>2022 - наше время</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="better-call">
-				<h2>Связаться со мной:</h2>
-				<form>
+				</div>
+			</header>
+			<div class="card main-card">
+				<div class="links">
+					<h2>Список социальных сетей:</h2>
 					<ul>
-						<li class="contact-me">
-							<label for="name">Ваше имя:</label>
-							<input
-								type="text"
-								id="name"
-								placeholder="Введите ваше имя"
-								class="area"
-							/>
+						<li>
+							<a href="oops_try_again_page.html" target="_blank"> ВКонтакте </a>
 						</li>
 						<li>
-							<label for="email">Ваш email:</label>
-							<input
-								type="email"
-								id="email"
-								placeholder="Введите ваш email"
-								class="area"
-							/>
+							<a href="oops_try_again_page.html" target="_blank"> YouTube </a>
+						</li>
+						<li>
+							<a href="oops_try_again_page.html" target="_blank"> Discord </a>
+						</li>
+						<li>
+							<a href="oops_try_again_page.html" target="_blank"> Telegram </a>
 						</li>
 					</ul>
-					<br />
-					<label for="message">Ваше сообщение:</label>
-					<br />
-					<textarea
-						class="area"
-						id="message"
-						cols="25"
-						rows="5"
-						placeholder="Введите здесь ваше сообщение"
-					></textarea>
-					<br />
+				</div>
+				<div class="card hobbies-card">
+					<h2>Мои хобби:</h2>
+					<ul class="table">
+						<li>Фильмы и сериалы</li>
+						<li>Видеоигры</li>
+						<li>Самообразование</li>
+					</ul>
+				</div>
+				<div class="card work-exp-card">
+					<h2>Мой опыт работы:</h2>
+					<table class="table" width="500">
+						<tbody>
+							<tr>
+								<td>Детский сад</td>
+								<td>Детсадовец</td>
+								<td>2008 - 2011</td>
+							</tr>
+							<tr>
+								<td>Школа</td>
+								<td>Школьник</td>
+								<td>2011 - 2022</td>
+							</tr>
+							<tr>
+								<td>ВУЗ</td>
+								<td>Студент</td>
+								<td>2022 - наше время</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="contact">
+					<h2>Связаться со мной:</h2>
+					<form>
+						<ul>
+							<li class="name">
+								<label for="name">Ваше имя:</label>
+								<br />
+								<input type="text" id="name" placeholder="Введите ваше имя" />
+							</li>
+							<li>
+								<label for="email">Ваш email:</label>
+								<br />
+								<input
+									type="email"
+									id="email"
+									placeholder="Введите ваш email"
+								/>
+							</li>
+						</ul>
+						<br />
+						<label for="message">Ваше сообщение:</label>
+						<br />
+						<textarea
+							id="message"
+							cols="25"
+							rows="5"
+							placeholder="Введите здесь ваше сообщение"
+						></textarea>
+						<br />
+					</form>
 					<button class="button">Отправить форму!</button>
-				</form>
+				</div>
 			</div>
 		</div>
 	</body>

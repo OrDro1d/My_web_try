@@ -4,54 +4,98 @@ body {
 	font-family: "Rubik", sans-serif;
 	font-size: 16px;
 	background-color: #333;
-	min-width: 600px;
+	margin: 0 10px;
+	min-width: 650px;
 }
 
 h1 {
 	color: white;
-	font-size: 3rem;
-	width: 600px;
-	border-radius: 20px;
+	font-size: 3.5em;
+	margin: 0;
+}
+
+header {
+	width: 1000px;
+	margin: auto;
+	padding: 40px 0;
+}
+
+header div {
+	display: inline-block;
 }
 
 h2 {
 	color: #222;
+	padding: 20px;
+	margin: 0;
 }
 
-.links {
-	display: flex;
-	list-style: none;
-}
-.links a:hover {
-	font-size: 1.2rem;
+.image {
 	border-radius: 30px;
+	box-shadow: 10px 10px 10px #222;
+	width: 400px;
+	display: block;
 }
 
-.links a:active {
-	color: lightgreen;
+.text-about-me {
+	max-width: 500px;
+	margin: 40px 20px;
 }
 
-/* .links a:visited {
-	color: black;
-} */
+.text-about-me p {
+	font-style: oblique;
+	color: #ddd;
+}
 
-.w-w- {
+.card {
+	border-radius: 14px;
+	padding: 20px;
+	margin: 20px;
+	box-shadow: 10px 10px 10px #ccc;
+}
+
+.main-card {
 	background-color: #ddd;
 	border-radius: 20px;
 	padding: 20px;
+	box-shadow: none;
+}
+
+.links {
+	margin: 20px;
+}
+
+.links li {
+	display: inline;
+	list-style: none;
 }
 
 .links a {
 	font-size: 16px;
 	transition: all 0.2s;
 	text-decoration: none;
-	padding: 10px 20px;
+	padding: 10px 10% 10px 0;
 	color: #333;
 }
+
+.links a:hover {
+	font-size: 1.2rem;
+	border-radius: 30px;
+	text-decoration: underline;
+}
+
+/* .links a:active {
+	color: lightgreen;
+} */
+
+/* .links a:visited {
+	color: black;
+} */
 
 .table {
 	padding-left: 50px;
 	line-height: 30px;
+	margin: 20px;
 }
 
 .table td {
@@ -63,107 +107,134 @@ td:nth-child(3) {
 	color: #777;
 }
 
-.text-about-me {
-	width: auto;
-	max-width: 500px;
-	margin: 40px 20px;
-}
-
-.text-about-me p {
-	font-style: oblique;
-	color: #ddd;
-}
-
-.card {
-	background-color: aliceblue;
-	border-radius: 13px;
-	padding: 20px 20px;
-	margin: 20px;
-	border-width: 1px;
-	box-shadow: 10px 10px 10px #ccc;
-}
-
-.sotki {
-	margin: 0;
-	height: 150px;
-}
-
-.sotki h2 {
-	padding: 30px;
-	margin: 0;
-}
-
-.c1 h2 {
-	background-color: rgb(155, 187, 212);
-	border-radius: 10px;
-	padding: 10px;
-	margin-right: 20%;
-}
-
-.c2 {
+.hobbies-card {
 	background-color: rgb(243, 236, 171);
 }
 
-.c2 h2 {
+.hobbies-card h2 {
 	background-color: rgb(235, 227, 113);
-	border-radius: 10px;
-	padding: 10px;
-	margin-right: 20%;
+	border-radius: 30px;
+	padding: 10px 0px 10px 20px;
+	margin-right: 40%;
 }
 
-.c3 {
+.work-exp-card {
 	background-color: rgb(177, 242, 177);
 }
 
-.c3 h2 {
+.work-exp-card h2 {
 	background-color: rgb(106, 239, 106);
-	border-radius: 10px;
-	padding: 10px;
-	margin-right: 20%;
+	border-radius: 30px;
+	padding: 10px 0px 10px 20px;
+	margin-right: 40%;
 }
 
-.image {
-	border-radius: 30px;
-	box-shadow: 10px 10px 10px #222;
-	width: 400px;
-	display: block;
-	margin: 40px 20px 0 20px;
+.contact textarea {
+	background-color: #ddd;
+	border-style: none;
+	border-bottom: 1px solid #444;
+	width: 30em;
+}
+
+.contact {
+	margin: 20px;
+}
+
+.contact li {
+	display: inline-block;
+}
+
+.name {
+	margin-right: 10%;
+	margin-bottom: 20px;
+}
+
+.contact ul {
+	padding: 0;
+}
+
+.contact h2 {
+	padding: 20px;
+}
+
+.contact form {
+	line-height: 30px;
+	padding: 0 0 0 60px;
+}
+
+.contact input {
+	border-style: none;
+	border-bottom: 1px solid #444;
+	background-color: #ddd;
+	width: 30em;
+	height: 2em;
 }
 
 .button {
 	font-size: 20px;
 	font-weight: bold;
-	border-radius: 30px;
+	border-radius: 20px;
 	border-style: none;
-	padding: 15px 15px;
+	padding: 30px;
+	margin: 30px auto;
+	display: block;
 	transition: all 0.3s;
-	background-color: rgb(236, 187, 171);
+	background-color: #222;
+	color: white;
 	cursor: pointer;
 }
 
 .button:hover {
-	background-color: rgb(900, 187, 171);
-	opacity: 0.5;
+	opacity: 0.8;
 }
 
 .button:active {
-	background-color: lightgreen;
+	color: lightgreen;
 }
 
-.area {
-	background-color: #eee;
-}
+@media (max-width: 650px) {
+	body {
+		font-family: "Rubik", sans-serif;
+		background-color: #222;
+		min-width: 650px;
+	}
 
-.contact-me li {
-	display: inline-block;
-}
+	.container {
+		margin: 0;
+	}
+	header {
+		margin: auto;
+		width: 500px;
+	}
+	.text-about-me {
+		text-align: center;
+	}
 
-.better-call h2 {
-	padding: 30px;
-	margin: 0;
-}
+	.image {
+		margin: 20px auto;
+		width: 300px;
+	}
 
-.better-call form {
-	line-height: 40px;
-	padding: 0 0 0 60px;
+	header div {
+		display: inline;
+	}
+
+	h1 {
+		color: white;
+		margin: auto;
+	}
+
+	.card {
+		margin: 20px 0;
+	}
+
+	.main-card {
+		margin: 0;
+	}
+
+	.button {
+		margin: 40px auto;
+		display: block;
+		padding: 30px;
+	}
 }
